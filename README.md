@@ -44,9 +44,7 @@ class ProductModelForm(forms.ModelForm):
 # List of available widgets:
 
 
-* **JinjaWidgetMixin**
-* **FormControlMixin**
-* **SelectSelect**
+* **Select**
 * **TextInput**
 * **Textarea**
 * **NumberInput**
