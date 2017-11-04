@@ -1,0 +1,4 @@
+<label class="custom-file">
+    <input class="custom-file-input" type="{{ widget.type }}" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value }}"{% endif %}{% include "django/forms/widgets/attrs.html" %} />
+    <span class="custom-file-control"></span>
+</label>

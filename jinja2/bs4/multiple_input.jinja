@@ -1,0 +1,8 @@
+{% set id = widget.attrs.id %}
+<div class="no-custom-controls-stacked">
+{% for group, options, index in widget.optgroups %}
+    {% for widget in options %}
+        {% include widget.template_name %}
+    {% endfor %}
+{% endfor %}
+</div>

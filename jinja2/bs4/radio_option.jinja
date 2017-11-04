@@ -1,0 +1,8 @@
+ <label class="custom-control custom-radio" {% if widget.attrs.id %} for="{{ widget.attrs.id }}"{% endif %}>
+    <input type="radio" name="{{ widget.name }}"{% if widget.value != None %} value="{{ widget.value }}"{% endif %}{% include "bs4/attrs.jinja" %} class="custom-control-input" />
+    <span class="custom-control-indicator"></span>
+{% if wrap_label %}
+    <span class="custom-control-description">{{ widget.label }}</span>
+{% endif %}
+</label>
+ 
