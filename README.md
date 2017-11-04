@@ -1,7 +1,7 @@
 # bootstrap4-django-forms
 Custom jinja2 form-widgets with bootstrap4 classes for django(1.11)
 
-#How to Use
+# How to Use
 
 1. Clone repo into apps folder of your projects
 
@@ -40,3 +40,20 @@ class ProductModelForm(forms.ModelForm):
 
         }
 ```
+
+# List of available widgets:
+
+
+* **JinjaWidgetMixin**
+* **FormControlMixin**
+* **SelectSelect**
+* **TextInput**
+* **Textarea**
+* **NumberInput**
+* **EmailInput**
+* **URLInput**
+* **PasswordInput**
+* **RadioSelect**
+* **CheckboxInput**
+* **CheckboxSelectMultiple**
+* **FileInput**
