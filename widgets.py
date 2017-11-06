@@ -28,10 +28,15 @@ class FormControlMixin(widgets.Widget):
         """
         Update class attribute
         """
-        kwargs.update({'attrs': {
-            'class': 'form-control'
-            }
-        })
+        if kwargs.get('attrs'):
+            kwargs['attrs'].update({
+                'class': 'form-control'
+            })
+        else:
+            kwargs.update({'attrs': {
+                'class': 'form-control'
+                }
+            })
         return super().__init__(*args, **kwargs)
 
 
@@ -41,10 +46,15 @@ class Select(widgets.Select):
     """
     def __init__(self, *args, **kwargs):
         """..."""
-        kwargs.update({'attrs': {
-            'class': 'form-control custom-select'
-            }
-        })
+        if kwargs.get('attrs'):
+            kwargs['attrs'].update({
+                'class': 'form-control custom-select'
+            })
+        else:
+            kwargs.update({'attrs': {
+                'class': 'form-control custom-select'
+                }
+            })
         super().__init__(*args, **kwargs)
 
 
